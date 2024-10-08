@@ -1,0 +1,30 @@
+.trending_card {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.card_heading {
+  display: flex;
+  color: #fff;
+  gap: 10px;
+  font-size: 20px;
+  align-items: center;
+  margin: 20px 6px;
+}
+.banner_section {
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+  align-items: center;
+}
+
+.banner_section .cards {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 930px) {
+  .banner_section {
+    flex-direction: column;
+  }
+}

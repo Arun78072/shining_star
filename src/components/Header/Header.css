@@ -1,0 +1,26 @@
+.navbar {
+  background: #1a2c38;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: end;
+  padding: 10px 10px;
+  box-shadow: #0003 0 4px 6px -1px, #0000001f 0 2px 4px -1px;
+  height: 64px;
+}
+.logo_img {
+  margin-right: auto;
+  width: 40px;
+  height: auto;
+}
+.icon {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}

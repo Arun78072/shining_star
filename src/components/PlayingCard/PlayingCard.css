@@ -1,0 +1,53 @@
+.card {
+}
+.card .image_box {
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+}
+.image_box img {
+  border-radius: 6px;
+}
+.image_box span {
+  position: absolute;
+  background: #2f4553;
+  color: #fff;
+  font-size: 16px;
+  top: 20px;
+  padding: 6px 10px;
+  border-radius: 0px 6px 6px 0px;
+}
+.card .image_box:hover {
+  transform: translateY(-10px);
+}
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 14px;
+}
+h3 span {
+  font-weight: 400;
+}
+.green-dot {
+  width: 6px;
+  display: block;
+  height: 6px;
+  background-color: green;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 255, 0, 0.8); /* Change to green */
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 4px rgba(0, 255, 0, 0.8); /* Change to green */
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(0, 255, 0, 1), 0 0 12px rgba(0, 255, 0, 0.5); /* Change to green */
+  }
+  100% {
+    box-shadow: 0 0 4px rgba(0, 255, 0, 0.8); /* Change to green */
+  }
+}

@@ -1,0 +1,90 @@
+aside {
+  background-color: #0f212e;
+  width: 250px;
+  height: 100%;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.menu_bar {
+  overflow: scroll;
+}
+.sidebar_menu {
+  height: 100%;
+  position: relative;
+}
+
+aside.active {
+  height: 100%;
+  width: 60px;
+  position: relative;
+}
+
+.top_section {
+  padding: 10px 10px;
+  box-shadow: #0003 0 4px 6px -1px, #0000001f 0 2px 4px -1px;
+  min-height: 64px;
+  display: flex;
+}
+.action_button {
+  background: none;
+  border: none;
+  color: #b1bad3;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 9px;
+}
+.menu_box {
+  background: #1a2c38;
+  margin: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.menu {
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.menu:hover {
+  background-color: #2f4553;
+}
+.web_menu {
+  margin: 16px;
+}
+.web_menu .menu {
+  width: 250px;
+}
+.active .web_menu {
+  display: none;
+}
+.mobile_menu {
+  display: none;
+}
+.mobile_menu .menu {
+  padding: 12px 4px;
+  justify-content: center;
+}
+.active .mobile_menu {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  aside .active {
+    position: relative;
+  }
+  aside {
+    position: absolute;
+    z-index: 99;
+  }
+  .cover_div {
+    background-color: #00000033;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
